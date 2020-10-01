@@ -1,6 +1,6 @@
-# 10 Projects in 10 Hours
+# 10 Simple and Amazing Projects in 10 Hours
 
-YouTube video is now Live, click below:
+YouTube Channel video is now Live, click below:
 
 [![10Hours10Projects](10Hours10Projects.png)](https://www.youtube.com/watch?v=dtKciwk_si4)
 
