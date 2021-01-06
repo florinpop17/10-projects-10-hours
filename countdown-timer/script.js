@@ -3,11 +3,11 @@ const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
 
-const newYears = "1 Jan 2021";
+//const newYears = "1 Jan 2021";
 
 function countdown() {
-    const newYearsDate = new Date(newYears);
     const currentDate = new Date();
+    const newYearsDate = new Date("1 Jan " + (currentDate.getFullYear()+1));
 
     const totalSeconds = (newYearsDate - currentDate) / 1000;
 
