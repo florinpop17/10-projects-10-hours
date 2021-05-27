@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Notes App</title>
+        <title>Notes App clone</title>
         <link rel="stylesheet" href="style.css" />
         <link
             rel="stylesheet"
@@ -12,7 +12,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.min.js"></script>
         <script src="script.js" defer></script>
     </head>
-    <body>
+    <body id="bd" style="background-color: #a8dfee;">
+        <button class="col" id="col" onclick="dark()" ondblclick="light()">
+            dark theme
+        </button>
+        <button class="col2" id="col2" onclick="light()">
+            light theme
+        </button>
         <button class="add" id="add">
             <i class="fas fa-plus"></i> Add note
         </button>
