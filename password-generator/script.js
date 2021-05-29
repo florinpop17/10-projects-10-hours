@@ -30,31 +30,39 @@ function getSymbol() {
 
 function generatePassword() {
     const len = lenEl.value;
-
+     let c=0;
     let password = "";
 
     if (upperEl.checked) {
         password += getUppercase();
+        c++;
     }
 
     if (lowerEl.checked) {
         password += getLowercase();
+        c++;
     }
 
     if (numberEl.checked) {
         password += getNumber();
+        c++;
     }
 
     if (symbolEl.checked) {
         password += getSymbol();
+        c++;
     }
-
+    if(len >= c){
     for (let i = password.length; i < len; i++) {
         const x = generateX();
         password += x;
     }
 
     pwEl.innerText = password;
+   }
+   else{
+       window.alert("please enter more length...");
+   }
 }
 
 function generateX() {
