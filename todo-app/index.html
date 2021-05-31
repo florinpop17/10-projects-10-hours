@@ -7,9 +7,9 @@
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" defer></script>
     </head>
-    <body>
-        <h1>todos</h1>
-        <form id="form">
+    <body id= "bd" style="background-color: #f5f5f5;">
+        <h1 id ="head" style="color: rgb(179, 131, 226);">todos..</h1>
+        <form id="form" >
             <input
                 type="text"
                 id="input"
@@ -17,6 +17,7 @@
                 placeholder="Enter your todo"
                 autocomplete="off"
             />
+            <button id='dark' class="dark" onclick="darkT()"> dark theme </button>
             <ul class="todos" id="todos"></ul>
         </form>
         <small

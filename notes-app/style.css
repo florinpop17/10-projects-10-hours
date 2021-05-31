@@ -5,16 +5,37 @@
 }
 
 body {
-    background-color: #7bdaf3;
+    
     display: flex;
     flex-wrap: wrap;
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding-top: 3rem;
 }
-
+.col2 {
+    background-color: #eef5e0;
+    border-radius: 3px;
+    border: none;
+    color: rgb(78, 71, 71);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 6rem;
+    right: 1rem;
+}
+.col {
+    background-color: #4a4b48;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 3.5rem;
+    right: 1rem;
+}
 .add {
-    background-color: #9ec862;
+    background-color: #6f7961;
     border-radius: 3px;
     border: none;
     color: white;
@@ -26,15 +47,15 @@ body {
 }
 
 .note {
-    background-color: #fff;
-    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(233, 232, 232);
+    box-shadow: 0 0 10px 4px rgba(37, 37, 37, 0.1);
     margin: 20px;
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 300px;
 }
 
 .note .tools {
-    background-color: #9ec862;
+    background-color: #609fda;
     display: flex;
     justify-content: flex-end;
     padding: 0.5rem;
@@ -50,9 +71,9 @@ body {
 }
 
 .note .main {
-    background-color: #eee;
+    background-color: rgb(238, 238, 238);
     overflow: hidden;
-    height: 400px;
+    height: 200px;
     width: 100%;
 }
 
@@ -61,10 +82,11 @@ body {
     font-family: inherit;
     font-size: 1.2rem;
     border: none;
-    height: 400px;
+    height: 200px;
     width: 100%;
 }
 
 .note .hidden {
     display: none;
 }
+
