@@ -6,7 +6,7 @@
 
 body {
     background-image: url("./snow.jpg");
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@ body {
 
 h1 {
     font-weight: normal;
-    font-size: 4rem;
+    font-size: 5rem;
     margin-top: 5rem;
 }
 
@@ -40,5 +40,5 @@ h1 {
 }
 
 .countdown-el span {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
