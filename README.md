@@ -42,7 +42,7 @@ You can find the projects [here](https://10projects10hours.netlify.app/).
 
 6. Movie App
 
--   Design: https://uidesigndaily.com/posts/photoshop-movie-app-mobile-day-193
+-   Codepen - https://codepen.io/FlorinPop17/pen/rRaEYv
 -   list of movies
 -   movie info
 -   fav movie
