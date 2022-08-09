@@ -54,7 +54,7 @@ function generatePassword() {
         password += x;
     }
 
-    pwEl.innerText = password;
+    pwEl.innerText = shufflePassword(password);
 }
 
 function generateX() {
@@ -78,6 +78,25 @@ function generateX() {
     if (xs.length === 0) return "";
 
     return xs[Math.floor(Math.random() * xs.length)];
+}
+
+function getRandomInt(pwLength) {
+    return Math.floor(Math.random() * pwLength);
+}
+
+function shufflePassword(password) {
+    const pwArr = password.split('');
+    const pwLength = pwArr.length;
+
+    for(let i = 0; i < pwLength; i++) {
+        const j = getRandomInt(pwLength);
+        const temp = pwArr[i];
+
+        pwArr[i] = pwArr[j];
+        pwArr[j] = temp;
+    }
+
+    return pwArr.join('');
 }
 
 generateEl.addEventListener("click", generatePassword);
