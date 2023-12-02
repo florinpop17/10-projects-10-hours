@@ -71,7 +71,8 @@ function addMeal(mealData, random = false) {
 
     const btn = meal.querySelector(".meal-body .fav-btn");
 
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (event) => {
+		event.stopPropagation()
         if (btn.classList.contains("active")) {
             removeMealLS(mealData.idMeal);
             btn.classList.remove("active");
@@ -138,7 +139,8 @@ function addMealFav(mealData) {
 
     const btn = favMeal.querySelector(".clear");
 
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (event) => {
+		event.stopPropagation()
         removeMealLS(mealData.idMeal);
 
         fetchFavMeals();
